@@ -1,0 +1,168 @@
+@charset "UTF-8";
+details {
+    width: 100%;
+    margin: 0 auto;
+    background: #98DE94;
+    margin-bottom: 0.5rem;
+    /*box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);*/
+    box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+summary {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    background: #98DE94;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+}
+    #champions summary, #group_a summary, #group_b summary, #group_c summary {
+        background-color: #dbf6da;
+        font-size: 1em;
+    }
+    #champions summary:before, #group_a summary:before, #group_b summary:before, #group_c summary:before {
+        border-width: 0.5rem;
+    }
+    summary:before {
+        content: "";
+        border-width: 1rem;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        top: 1.3rem;
+        left: 1rem;
+        transform: rotate(0);
+        transform-origin: 1rem 50%;
+        transition: 0.25s transform ease;
+    }
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+details > ul > li {
+    margin: 50px;
+    list-style: none;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+    table th {
+        background-color: #dbf6da;
+    }
+        table th:first-child {
+            width: 10%;
+        }
+    td#team_img {
+        height: 10vh;
+    }
+        table td.team_name {
+            font-size: x-large;
+            font-weight: bold;
+            color: black;
+        }
+        #group_stage td:nth-child(n+3), #rumble_stage td:nth-child(n+3){
+            font-size: x-large;
+            width: 10%;
+        }
+        table img {
+            width: 30%;
+        }
+
+#winner, #participate {
+    background-color: #dbf6da;
+}
+    #winner > h2 {
+        color: #ec9f19;
+    }
+    #winner > img {
+        width: 30%;
+        margin: 5% auto;
+    }
+    #champions table {
+        width: 100%;
+    }
+    #champions tr:nth-child(3n) {
+        color: #ec9f19;
+    }
+        #champions tr:nth-child(3n) sup {
+            color: black;
+            font-size: x-small;
+        }
+    #champions td {
+        width: 33%;
+    }
+    #champions img {
+        width: 5vw;
+    }
+#tournament img {
+    text-align: center;
+    width: 100%;
+}
+#quaterfinal {
+    width: 100%;
+}   
+    #quaterfinal td {
+        width: 20%;
+    }
+    #quaterfinal img {
+        width: 5vw;
+    }
+    #final td {
+        width: 10%;
+    }
+    #final img {
+        width: 10vw;
+    }
+#participate img {
+    vertical-align: middle;
+    margin: 20px;
+}
+#rumble_stage {
+    width: 49%; float: left;
+}
+#group_stage {
+    width: 49%; float: right;
+}
+    #group_stage tr:nth-child(n+6), #rumble_stage tr:nth-child(n+10){
+        color: red;
+        background-color: pink;
+    }
+
+@media screen and (max-width: 600px) {
+    summary {
+        font-size: 1em;
+    }
+    summary:before {
+        border-width: 8px;
+    }
+        #group_stage td:nth-child(n+3), #rumble_stage td:nth-child(n+3){
+            font-size: large;
+        }
+}
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    summary {
+        font-size: 1.5vw;
+    }
+    summary:before {
+        border-width: 1vw;
+    }
+        #group_stage td:nth-child(n+3), #rumble_stage td:nth-child(n+3){
+            font-size: large;
+        }
+}

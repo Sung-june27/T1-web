@@ -1,0 +1,43 @@
+.team_info {
+    width: 100%;
+    margin-top: 5px;
+}   
+    .team_info th {
+        color: white;
+    }
+    .team_info td { 
+    text-indent: 1em;
+    padding: 10px;
+    }
+    .history img { width: 75px;}
+th { 
+    background-color: #e4002b;
+    font-size: large;
+    padding: 10px;
+}
+td a#polt {
+    color: white;
+    text-decoration: none;
+    background-color: #e4002b;
+    border-radius: 15px;
+}
+#webs a {
+    margin: 5px;
+}
+#sponsers img {
+    width: 65px;
+}
+@media screen and (max-width: 600px) {
+    .team_info td { 
+        text-align: center;
+        text-indent: 0em;
+    }
+    .lck img, .history img, #sponsers img { width: 30px;}
+}
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    .team_info td { 
+        text-align: center;
+        text-indent: 0em;
+    }
+    .lck img, .history img, #sponsers img { width: 45px;}
+}

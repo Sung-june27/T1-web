@@ -1,0 +1,54 @@
+#right2 {
+    float: right;
+    width: 930px;
+}
+.member_info {
+    margin: 2px;
+    display: inline-block;
+}
+    .member_info img {
+        width: 175px;
+    }
+    div#map {
+        background-image: url('./member/summoners_rift.jpg');
+        background-size: 100%;
+        width: 1000px; height: 858px;
+        position: relative;
+    }
+        div#map > table {
+            position: absolute;
+            background-color: #e4002b;
+            color: white;
+        }
+#zeus { top: 50px; left: 250px;}
+#oner { top: 200px; left: 350px;}
+#faker { top: 300px; left: 500px;}
+#gumayusi { top: 600px; left: 675px;}
+#keria { top: 600px; left: 775px;}
+h2 { margin: 10px;}
+@media screen and (max-width: 600px) {
+    div#map { display: none;}
+    div#player, div#coach {
+        display: inline-block;
+    }
+        h2 {
+            margin: 0 10px;
+        }
+    #right2 {
+        float: left;
+        width: auto; height: auto;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    div#map { display: none;}
+    div#player, div#coach {
+        display: inline-block;
+    }
+        h2 {
+            margin: 0 10px;
+        }
+    #right2 {
+        float: left;
+        width: auto; height: auto;
+    }
+}

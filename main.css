@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500&display=swap');
+* { margin: 0; padding: 0;}
+    body {
+        margin: 0 auto;
+        width: 1080px;  
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #top {
+        height: 200px;
+        position: relative;
+    }
+        #top a {
+            position: absolute;
+            margin: 30px;
+        }
+    #middle { 
+        overflow: hidden;
+        position: relative;
+    }
+    #left {
+        float: left;
+        width: 150px;
+        position: fixed;
+        top: 22%;
+    }
+    #right {
+        float: right;
+        width: 930px;
+    }
+        ul { height: 50%;}
+        #left li {
+            list-style: none;
+            margin: 30px 0;
+        }
+            #left li a {
+                font-size: x-large;
+                font-weight: bold;
+                color: #e4002b;
+                text-decoration: none;
+            }
+    #bottom {
+        background-color: #e4002b;
+        margin-top: 20px;
+        color: white;
+        height: 150px;
+        position: absolute;
+        left: 0; right: 0;
+    }
+
+    .center { 
+        text-align: center;
+        text-indent: 0em;
+    }
+
+    .video-inner{
+        position: relative;
+        width: 100%; /* 넓이 값은 조정해서 사용 */
+        padding-bottom: 50.25%;
+        overflow: hidden;
+    }
+    .video-inner iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #back_to_top {
+        text-align: center;
+        background-color: #e4002b;
+        border: 1px solid black;
+        border-radius: 60px;
+        position: fixed;
+        width: 50px; height: 50px;
+        bottom: 25px; right: 25px;
+        z-index: 10;
+    }
+    #back_to_top > i {
+        color: white;
+        line-height: 50px;
+    }
+
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    @media screen and (max-width: 600px) {
+        body { width: auto;}
+        #top {
+            width: auto; height: 60px;
+            float: none;
+        }
+            #top img { width: 110px;}
+        #middle { width: auto; float: none;}
+        #left { 
+            background-color: #e4002b;
+            width: auto;   height: 40px;
+            float: none;
+            position: inherit;
+            display: block;
+            line-height: 20px;
+        }
+            #left li a{
+                color: white;
+                font-size: large;
+                float: left;
+                margin: 10px;
+            }
+        #right { 
+            width: auto; float: none;
+            display: block;
+        }
+        #bottom {
+            font-size: small;
+        }
+            #bottom img {
+                width: 30px;
+            }
+    }
+    @media screen and (min-width: 600px) and (max-width: 1080px) {
+        body { width: auto;}
+        #top {
+            width: auto; height: 70px;
+            float: none;
+        }
+            #top img { width: 110px;}
+        #middle { width: auto; float: none;}
+        #left {  
+            background-color: #e4002b;
+            width: auto;  height: 40px;
+            float: none;
+            position: inherit;
+            display: block;
+        }
+            #left li a{
+                color: white;   
+                font-size: large;
+                float: left;
+                margin: 10px;
+                line-height: 20px;
+            }
+        #right { 
+            width: auto; float: none;
+            display: block;
+        }
+        #bottom {
+            font-size: small;
+        }
+            #bottom img {
+                width: 45px;
+            }
+    }
